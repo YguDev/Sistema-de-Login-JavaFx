@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="usermanagerfx.UserController">
+   <children>
+      <VBox layoutX="84.0" layoutY="45.0" prefHeight="62.0" prefWidth="428.0" spacing="10.0">
+         <children>
+             <TextField fx:id="txtId" promptText="ID" />
+            <TextField fx:id="txtNome" promptText="Nome:">
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </TextField>
+            <TextField fx:id="txtSenha" promptText="Senha:" />
+         </children>
+      </VBox>
+      <VBox layoutX="89.0" layoutY="155.0" prefHeight="91.0" prefWidth="408.0" spacing="15.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button onAction="#cadastrar" text="Cadastrar" />
+                  <Button onAction="#listar" text="Listar" />
+                  <Button onAction="#atualizar" text="Atualizar" />
+                  <Button onAction="#deletar" text="Deletar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TextArea fx:id="txtAreaUsuario" layoutX="114.0" layoutY="223.0" prefHeight="136.0" prefWidth="368.0" />
+   </children>
+</AnchorPane>
